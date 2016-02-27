@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fce7a7-ff5f-40b3-a4d6-0fea4add0a65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/SampleTest.class" afterPath="$PROJECT_DIR$/target/test-classes/SampleTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/BaseSettings.java" afterPath="$PROJECT_DIR$/src/main/java/core/BaseSettings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SampleTest.java" afterPath="$PROJECT_DIR$/src/test/java/SampleTest.java" />
     </list>
     <ignored path="Template.iws" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="SampleTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45045045">
-              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+            <state vertical-scroll-proportion="-0.16441442">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -603,27 +602,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SampleTest - 2016.02.27 at 19h 36m 26s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 37m 03s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 39m 05s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 39m 35s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 40m 08s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 40m 25s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleTest - 2016.02.27 at 19h 44m 51s.xml">
-      <configuration name="SampleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SampleTest - 2016.02.27 at 19h 45m 08s.xml">
       <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
@@ -633,10 +611,31 @@
     <history-entry file="SampleTest - 2016.02.27 at 19h 46m 10s.xml">
       <configuration name="SampleTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 19h 47m 16s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 19h 50m 13s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 20h 13m 56s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 20h 16m 58s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 20h 19m 00s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 20h 19m 51s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleTest - 2016.02.27 at 20h 20m 44s.xml">
+      <configuration name="SampleTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -645,7 +644,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -666,7 +665,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -694,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45045045">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        <state vertical-scroll-proportion="-0.16441442">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
