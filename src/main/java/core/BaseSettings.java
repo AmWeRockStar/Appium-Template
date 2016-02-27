@@ -8,14 +8,14 @@ import java.net.URL;
 
 public class BaseSettings {
 
-    public static AndroidDriver driver;
+    private AndroidDriver driver;
 
-    public static AndroidDriver getDriver() {
+    public AndroidDriver getDriver() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidTestDevice");
         if (driver == null)
             try {
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
             } catch (Exception e) {
             }
         return driver;
