@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="SampleTest" time="3.441" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="SampleTest" time="36.341" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/jre/lib"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher surefire-report:report"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,6 +63,11 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|tac.co.th|*.tac.co.th|10.89.104.22|10.0.127.14|localhost|*.localhost|127.0.0.1|10.89.104.33"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="SampleTest" name="getTextFromTextView" time="0.199"/>
-  <testcase classname="SampleTest" name="clickOnButton" time="3.242"/>
+  <testcase classname="SampleTest" name="when_click_on_button_should_see_dialog_message_hello_click" time="7.012"/>
+  <testcase classname="SampleTest" name="should_see_text_sample_text" time="0.333"/>
+  <testcase classname="SampleTest" name="when_click_toggle_button_should_see_close_state_to_open_state" time="1.095"/>
+  <testcase classname="SampleTest" name="when_press_on_checkbox_state_should_are_change" time="0.844"/>
+  <testcase classname="SampleTest" name="move_seekbar_from_0_to_something" time="0.578"/>
+  <testcase classname="SampleTest" name="put_github_username_should_see_fullname" time="20.925"/>
+  <testcase classname="SampleTest" name="swipe_from_one_fragment_to_two_fragment" time="5.554"/>
 </testsuite>
