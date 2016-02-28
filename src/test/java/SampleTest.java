@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static junit.framework.TestCase.assertEquals;
 
 @FixMethodOrder(MethodSorters.JVM)
@@ -63,6 +65,22 @@ public class SampleTest {
     }
 
     @Test
+    public void result_number_should_be_correct() throws Exception {
+        driver.startActivity("com.geekybase.appfortraining", "com.geekybase.appfortraining.activity.SecondActivity");
+
+        WebElement firstNumber = driver.findElement(By.id("com.geekybase.appfortraining:id/tvNumber1"));
+        WebElement secondNumber = driver.findElement(By.id("com.geekybase.appfortraining:id/edtNumber2"));
+
+        firstNumber.sendKeys("10");
+        secondNumber.sendKeys("10");
+
+        (driver.findElement(By.id("com.geekybase.appfortraining:id/btnCal"))).click();
+
+        WebElement result = driver.findElement(By.id("com.geekybase.appfortraining:id/tvResult"));
+        assertEquals("20", result.getText());
+    }
+
+    @Test
     public void put_github_username_should_see_fullname() throws Exception {
         driver.startActivity("com.geekybase.appfortraining", "com.geekybase.appfortraining.activity.ThreeActivity");
 
@@ -78,14 +96,39 @@ public class SampleTest {
     }
 
     @Test
-    public void swipe_from_one_fragment_to_two_fragment() throws Exception {
+    public void swipe_right_should_change_tab() throws Exception {
         driver.startActivity("com.geekybase.appfortraining", "com.geekybase.appfortraining.activity.FourActivity");
-        Thread.sleep(400);
-//        int w = driver.manage().window().getSize().getWidth();
-//        int h = driver.manage().window().getSize().getHeight();
-        driver.swipe(800, 500, 100, 500, 400);
-        WebElement content = driver.findElement(By.id("com.geekybase.appfortraining:id/viewPager"));
-        assertEquals("Two", content.getAttribute("name"));
+        WebElement pager = driver.findElement(By.id("com.geekybase.appfortraining:id/viewPager"));
+        driver.swipe(400, 400, 50, 400, 300);
+        String page = pager.getAttribute("name");
+        assertEquals("Two", page);
+    }
+
+    @Test
+    public void added_music_name_should_be_the_same() throws Exception {
+        driver.startActivity("com.geekybase.appfortraining", "com.geekybase.appfortraining.activity.FiveActivity");
+        (driver.findElement(By.id("com.geekybase.appfortraining:id/edtMusicName"))).sendKeys("test1");
+        (driver.findElement(By.id("com.geekybase.appfortraining:id/edtArtist"))).sendKeys("test2");
+        (driver.findElement(By.id("com.geekybase.appfortraining:id/btnAdd"))).click();
+        List<WebElement> musics = driver.findElements(By.id("com.geekybase.appfortraining:id/tvMusicName"));
+        assertEquals("test1", musics.get(musics.size() - 1).getText());
+    }
+
+    @Test
+    public void should_find_overflow_list_item() throws Exception {
+        WebElement musicName = driver.findElement(By.id("com.geekybase.appfortraining:id/edtMusicName"));
+        WebElement artist = driver.findElement(By.id("com.geekybase.appfortraining:id/edtArtist"));
+        WebElement btn = driver.findElement(By.id("com.geekybase.appfortraining:id/btnAdd"));
+        for (Integer i = 0; i < 4; i++) {
+            musicName.sendKeys(i.toString());
+            artist.sendKeys(i.toString());
+            btn.click();
+            musicName.clear();
+            artist.clear();
+        }
+        driver.scrollTo("3");
+        List<WebElement> musics = driver.findElements(By.id("com.geekybase.appfortraining:id/tvMusicName"));
+        assertEquals("3", musics.get(musics.size() - 1).getText());
     }
 
     @AfterClass
